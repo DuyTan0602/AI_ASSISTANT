@@ -21,16 +21,28 @@ def Listen():
     return query.lower()
 def stop():
     Say("Hẹn găp lại sau nha ! ... ")
+# def get_text():
+#     for i in range(3):
+#         text = Listen()
+#         if text:
+#             return text.lower()
+#         elif i < 2:
+#             Say("Máy không nghe rõ. Bạn nói lại được không!")
+#             time.sleep(3)
+#     time.sleep(2)
+#     # stop()
+#     return 0
+
 def get_text():
     for i in range(3):
-        text = Listen()
-        if text:
-            return text.lower()
+        query = Listen()
+        if query:
+            return query.lower()
         elif i < 2:
             Say("Máy không nghe rõ. Bạn nói lại được không!")
             time.sleep(3)
     time.sleep(2)
-    stop()
+    # stop()
     return 0
 
 

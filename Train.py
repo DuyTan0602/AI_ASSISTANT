@@ -20,18 +20,18 @@ for intent in intents['intents']:
     tag = intent['tag']
     tags.append(tag)
 
-    for pattern in intent['patterns']:
+    for input in intent['inputs']:
         # print(pattern)
         # tokenize each word in the sentence
-        w = tokenize(pattern)
+        w = tokenize(input)
         # add to our words list
         all_words.extend(w)
         # add to xy pair
         xy.append((w, tag))
 
-ignore_words = [',','?','/','.','!'] #loai bo cac dau 
+loaibodau = [',','?','/','.','!'] #loai bo cac dau 
 
-all_words = [lower(w) for w in all_words if w not in ignore_words] 
+all_words = [lower(w) for w in all_words if w not in loaibodau] 
 # Sắp xếp và lưu vào hai tệp pattern và tags
 all_words = sorted(set(all_words)) 
 tags = sorted(set(tags))
@@ -114,7 +114,7 @@ data = {
     "tags":tags
 }
 
-FILE = "TrainData.pth"
+FILE = "huanluyen.pth"
 torch.save(data,FILE)
 
 print(f"Training Complete,File Saved To {FILE}")

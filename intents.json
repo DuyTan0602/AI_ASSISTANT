@@ -1,47 +1,47 @@
 {
   "intents": [
     {
-      "tag": "Lời Chào",
-      "patterns": [
+      "tag": "lời chào",
+      "inputs": [
         "Chào",
         "chào trợ lý ảo",
         "Trợ lí ảo ơi",
         "trợ lý ảo",
         "Xin chào"
       ],
-      "responses": [
+      "outputs": [
         "lời chào "
       ]
  
     },
     {
       "tag": "Tạm Biệt",
-      "patterns": ["Tạm Biệt", "Hẹn Gặp Lại", ""],
-      "responses": ["tạm biêt" ]
+      "inputs": ["Tạm Biệt", "Hẹn Gặp Lại", ""],
+      "outputs": ["tạm biêt" ]
  
     },
     {
       "tag": "Cảm ơn",
-      "patterns": ["cảm ơn", "Cảm ơn bạn", "Rất hài lòng", "Cảm ơn rất nhiều"],
-      "responses":["Không có gì ạ"]
+      "inputs": ["cảm ơn", "Cảm ơn bạn", "Rất hài lòng", "Cảm ơn rất nhiều"],
+      "outputs":["Không có gì ạ"]
 
 
     },
     {
       "tag": "giờ",
-      "patterns": [
+      "inputs": [
         "bây giờ là mấy giờ",
         "thời gian",
         "mấy giờ rồi"
       ],
-      "responses": [
+      "outputs": [
         "giờ"
       ]
 
     },
     {
       "tag": "thời tiết",
-      "patterns": [
+      "inputs": [
         "Thời tiết",
         "Thời tiết hôm nay thế nào",
         "Trời hôm nay thế nào",
@@ -50,108 +50,108 @@
         "thời tiết"
 
       ],
-      "responses": [
-        "thời tiết:"
+      "outputs": [
+        "thời tiết"
       ]
 
     },
     {
       "tag": "ngày",
-      "patterns": [
+      "inputs": [
         "ngày mấy",
         "hôm nay là ngày bao nhiêu",
         "ngày",
         "hôm nay là ngày mấy",
         "hiện tại ngày hôm nay là bao nhiêu"
       ],
-      "responses": [
+      "outputs": [
         "ngày"
       ]
 
     },
     {
       "tag": "mở google chrome",
-      "patterns": [
+      "inputs": [
         "mở chrome","google chrome"
 
       ],
-      "responses": [
+      "outputs": [
         "mở chrome"
       ]
 
     },
     {
       "tag": "mở microsoft adge",
-      "patterns": [
+      "inputs": [
         "mở microsoft adge","microsoft adge"
 
       ],
-      "responses": [
+      "outputs": [
         "mở microsoft adge"
       ]
 
     },
     {
       "tag": "giúp đỡ",
-      "patterns": [
+      "inputs": [
         "có thể làm gì",
         "bạn có thể làm gì cho tôi"
 
       ],
-      "responses": [
+      "outputs": [
         "có thể làm gì"
       ]
 
     },
     {
       "tag": "hình nền",
-      "patterns": [
+      "inputs": [
         "thay đổi",
         "hình nền",
         "thay đổi hình nền desktop",
         "thay đổi hình nền máy tính"
 
       ],
-      "responses": [
+      "outputs": [
         "hình nền"
       ]
 
     },
     {
       "tag": "wikipedia",
-      "patterns": [
+      "inputs": [
         
         "định nghĩa",
         "Định nghĩa"
 
       ],
-      "responses": [
+      "outputs": [
         "định nghĩa"
       ]
 
     },
     {
       "tag": "youtube",
-      "patterns": [
+      "inputs": [
         "mở youtube",
         "youtube",
         "tìm kiếm thông tin trên youtube"
 
       ],
-      "responses": [
+      "outputs": [
         "youtube"
       ]
 
     },
     {
       "tag": "google",
-      "patterns": [
+      "inputs": [
         "tìm kiếm",
         "google",
         "google search"
 
       ],
-      "responses": [
+      "outputs": [
         "google"
       ]
     }

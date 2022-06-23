@@ -84,7 +84,9 @@ def Time():
     Say(time)
 def Date():
      now = datetime.datetime.now()
-     Say(f"hôm nay là ngày {now.day} tháng {now.month} năm {now.year}")
+     content = f"hôm nay là ngày {now.day} tháng {now.month} năm {now.year}"
+     Say(content)
+     return content
 def current_weather():
     Say("Bạn muốn xem thời tiết ở đâu ạ.")
     # Đường dẫn trang web để lấy dữ liệu về thời tiết
@@ -137,6 +139,8 @@ def current_weather():
     else:
         # nếu tên thành phố không đúng thì nó nói dòng dưới 227
         Say("Không tìm thấy địa chỉ của bạn")
+    return content
+    
 def tell_me_about():
     try:
         Say("Hãy nói cho tôi nghe Bạn muốn tìm gì ạ ?")
@@ -159,7 +163,7 @@ def open_app(text):
     if "google" in text:
         Say(f'Mở Google Chrome')
         os.system('"C:\Program Files//Google/Chrome/Application/chrome.exe"')
-    if"microsoft edge" in text:
+    elif"microsoft edge" in text:
         Say(f'Mở Microsoft Edge')
         os.system('"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe"')
     else:

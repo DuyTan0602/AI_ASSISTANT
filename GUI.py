@@ -1,10 +1,13 @@
-from cgitb import text
-from os import stat
+
 from tkinter import *
 from tkinter import font
-from turtle import width
-from torch import import_ir_module
+from Listen import Listen
+
 from chat import get_response, Name
+import time
+from Listen import Listen
+from Listen import get_text
+from Speak import Say
 
 BG_GRAY = "#ABB2B9"
 BG_COLOR = "#17202A"
@@ -50,15 +53,18 @@ class ChatApplication:
         self.msg_entry = Entry(bottom_label,bg ="#2C3E50",fg = TEXT_COLOR,font=FONT)
         self.msg_entry.place(relwidth=0.74,relheight=0.06,rely = 0.008,relx=0.011)
         self.msg_entry.focus()
-        self.msg_entry.bind("<Return>",self._on_enter_pressed)
+        # self.msg_entry.bind("<Return>",self._on_enter_pressed)
 
-        send_button = Button(bottom_label,text = "Send",font= FONT_BOLD,width=20, bg = BG_GRAY,
+        send_button = Button(bottom_label,text = "Voice",font= FONT_BOLD,width=20, bg = BG_GRAY,
                                     command=lambda:self._on_enter_pressed(None))
         send_button.place(relx = 0.77, rely = 0.008,relheight=0.06,relwidth=0.22)
 
     def _on_enter_pressed(self,event):
-        msg = self.msg_entry.get()
-        self._insert_message(msg,"YOU")
+        # msg = self.msg_entry.get()\
+        time.sleep(1)
+        Say("Bạn có yêu cầu gì?")
+        msg = get_text()
+        self._insert_message(msg,"Bạn")
     def _insert_message(self,msg,sender):
         if not msg:
             return
@@ -76,7 +82,7 @@ class ChatApplication:
 
         self.text_widget.see(END)
 if __name__ == "__main__":
-    app = ChatApplication()
-    app.run()
+        app = ChatApplication()
+        app.run()
 
 
