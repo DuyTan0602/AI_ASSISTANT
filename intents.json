@@ -1,0 +1,160 @@
+{
+  "intents": [
+    {
+      "tag": "Lời Chào",
+      "patterns": [
+        "Chào",
+        "chào trợ lý ảo",
+        "Trợ lí ảo ơi",
+        "trợ lý ảo",
+        "Xin chào"
+      ],
+      "responses": [
+        "lời chào "
+      ]
+ 
+    },
+    {
+      "tag": "Tạm Biệt",
+      "patterns": ["Tạm Biệt", "Hẹn Gặp Lại", ""],
+      "responses": ["tạm biêt" ]
+ 
+    },
+    {
+      "tag": "Cảm ơn",
+      "patterns": ["cảm ơn", "Cảm ơn bạn", "Rất hài lòng", "Cảm ơn rất nhiều"],
+      "responses":["Không có gì ạ"]
+
+
+    },
+    {
+      "tag": "giờ",
+      "patterns": [
+        "bây giờ là mấy giờ",
+        "thời gian",
+        "mấy giờ rồi"
+      ],
+      "responses": [
+        "giờ"
+      ]
+
+    },
+    {
+      "tag": "thời tiết",
+      "patterns": [
+        "Thời tiết",
+        "Thời tiết hôm nay thế nào",
+        "Trời hôm nay thế nào",
+        "Thời tiết hôm nay như thế nào",
+        "thời tiết hôm nay như thế nào",
+        "thời tiết"
+
+      ],
+      "responses": [
+        "thời tiết:"
+      ]
+
+    },
+    {
+      "tag": "ngày",
+      "patterns": [
+        "ngày mấy",
+        "hôm nay là ngày bao nhiêu",
+        "ngày",
+        "hôm nay là ngày mấy",
+        "hiện tại ngày hôm nay là bao nhiêu"
+      ],
+      "responses": [
+        "ngày"
+      ]
+
+    },
+    {
+      "tag": "mở google chrome",
+      "patterns": [
+        "mở chrome","google chrome"
+
+      ],
+      "responses": [
+        "mở chrome"
+      ]
+
+    },
+    {
+      "tag": "mở microsoft adge",
+      "patterns": [
+        "mở microsoft adge","microsoft adge"
+
+      ],
+      "responses": [
+        "mở microsoft adge"
+      ]
+
+    },
+    {
+      "tag": "giúp đỡ",
+      "patterns": [
+        "có thể làm gì",
+        "bạn có thể làm gì cho tôi"
+
+      ],
+      "responses": [
+        "có thể làm gì"
+      ]
+
+    },
+    {
+      "tag": "hình nền",
+      "patterns": [
+        "thay đổi",
+        "hình nền",
+        "thay đổi hình nền desktop",
+        "thay đổi hình nền máy tính"
+
+      ],
+      "responses": [
+        "hình nền"
+      ]
+
+    },
+    {
+      "tag": "wikipedia",
+      "patterns": [
+        
+        "định nghĩa",
+        "Định nghĩa"
+
+      ],
+      "responses": [
+        "định nghĩa"
+      ]
+
+    },
+    {
+      "tag": "youtube",
+      "patterns": [
+        "mở youtube",
+        "youtube",
+        "tìm kiếm thông tin trên youtube"
+
+      ],
+      "responses": [
+        "youtube"
+      ]
+
+    },
+    {
+      "tag": "google",
+      "patterns": [
+        "tìm kiếm",
+        "google",
+        "google search"
+
+      ],
+      "responses": [
+        "google"
+      ]
+    }
+
+  ]
+}
